@@ -1,3 +1,4 @@
 [submodule "lib/Cordova"]
 	path = lib/Cordova
-	url = git://github.com/apache/cordova-ios.git
+	url = https://github.com/apache/cordova-ios.git
+
