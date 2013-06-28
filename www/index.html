@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Hello World</title>
+    <script src="cordova.ios.js"></script>
+    <script src="HelloWorldPlugin.js"></script>
+</head>
+<body>
+
+    <h1>Hello World Plugin</h1>
+    
+    <div id="message"></div>
+
+    <script>
+        function demo() {
+            window.plugins.helloWorld.hello();
+            
+            window.plugins.helloWorld.helloCallback(function() {
+                                                        document.getElementById('message').innerHTML = "hello";
+                                                    },
+                                                    null);
+            
+            window.plugins.helloWorld.alert("Hello World!");
+        }
+        
+        document.addEventListener("deviceready", demo);
+    </script>
+    
+</body>
+</html>
